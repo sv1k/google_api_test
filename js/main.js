@@ -32,7 +32,6 @@ function initMap() {
 				this.setupPlaceChangedListener(originAutocomplete, 'ORIG');
 				this.setupPlaceChangedListener(destinationAutocomplete, 'DEST');
 				this.setupPlaceChangedListener(waypointAutocomplete, 'WAYP');
-				// this.setupPlaceFromArchive();
 			}
 
 			AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(autocomplete, mode) {
