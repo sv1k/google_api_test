@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>Directions service</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div id="map"></div>
+
+		<div id="floating-panel">
+			<b>Start: </b>
+				<input  id="origin-input" type="text" placeholder="Адрес отправки">
+			<b>End: </b>
+				<input  id="destination-input" type="text" placeholder="Адрес доставки">
+				<input id="waypoint-input" type="text" placeholder="Добавьте промежуточную точку">
+
+			<button onclick="saveToLS()">Сохранить маршрут</button>
+			<button onclick="clearLS()">Очистить историю маршрутов</button>
+		</div>
+
+		<select id="select-direction">
+		</select>
+
+		<script src="js/main.js"></script>
+
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs9PjdnO5LEKaAIw9_HauZQXF6hYdLspA&callback=initMap&libraries=places">
+		</script>
+
+	</body>
+</html>

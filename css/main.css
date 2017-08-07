@@ -1,0 +1,25 @@
+#map {
+	height: 70%;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+input {
+	width: 300px;
+}
+
+#floating-panel {
+	left: 25%;
+	z-index: 5;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #999;
+	text-align: center;
+	font-family: 'Roboto','sans-serif';
+	line-height: 30px;
+	padding-left: 10px;
+}
